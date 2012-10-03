@@ -5,9 +5,27 @@
               android:layout_height="fill_parent"
         >
     <TextView
+            android:id="@+id/message"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textSize="12px"
+            android:textStyle="bold"
+            android:padding="5px"
+            android:background="#fff"
+            android:textColor="#00f"
             android:text="Hello World, HalloAndroidActivity"
             />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vorname_nachname"
+        />
+    <Button
+        android:id="@+id/knopf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        />
 </LinearLayout>
 
