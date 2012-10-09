@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Hallo Android!</string>
+    <string name="demo_name">State Demo!</string>
     <string name="vorname_nachname">Vorname Nachname</string>
     <string name="willkommen">Hallo. Schön das Du da bist. Bitte verrate mir Deinen Namen.</string>
     <string name="hallo">Hallo %1$s. Ich freue mich, Dich kennenzulernen.</string>
-    <string name="weiter">Weiter</string>
-    <string name="beenden">Beenden</string>
+    <string name="speichern">Weiter</string>
+    <string name="beenden">Instance Demo</string>
 </resources>

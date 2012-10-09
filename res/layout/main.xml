@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
@@ -8,24 +8,38 @@
             android:id="@+id/message"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:textSize="12px"
-            android:textStyle="bold"
+            android:width="0dip"
+            android:textSize="18dip"
             android:padding="5px"
             android:background="#fff"
             android:textColor="#00f"
-            android:text="Hello World, HalloAndroidActivity"
+            android:inputType="textCapWords"
+            android:text="@string/willkommen"
             />
     <EditText
         android:id="@+id/name"
+        android:layout_below="@id/message"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:singleLine="true"
         android:hint="@string/vorname_nachname"
         />
     <Button
-        android:id="@+id/knopf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        />
-</LinearLayout>
+            android:id="@+id/save_button"
+            android:layout_below="@id/name"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speichern"
+            android:visibility="visible"
+            />
+    <Button
+            android:id="@+id/end_button"
+            android:layout_below="@id/name"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beenden"
+            />
+</RelativeLayout>
 
