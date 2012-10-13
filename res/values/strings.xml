@@ -2,10 +2,12 @@
 <resources>
     <string name="app_name">Hallo Android!</string>
     <string name="demo_name">State Demo!</string>
+    <string name="list_name">Namensliste</string>
     <string name="vorname_nachname">Vorname Nachname</string>
     <string name="willkommen">Hallo. Schön das Du da bist. Bitte verrate mir Deinen Namen.</string>
     <string name="hallo">Hallo %1$s. Ich freue mich, Dich kennenzulernen.</string>
     <string name="speichern">Weiter</string>
+    <string name="show_list">Liste zeigen</string>
     <string name="new_activity">Neue Activity</string>
     <string name="fragment">Ich bin ein Fragment</string>
     <string name="zurueck">Zurück</string>

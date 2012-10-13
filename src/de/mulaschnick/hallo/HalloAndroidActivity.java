@@ -17,6 +17,7 @@ public class HalloAndroidActivity extends Activity
     private TextView message;
     private Button end_button;
     private Button save_button;
+    private Button list_button;
     private EditText eingabe;
     private Bundle data = new Bundle();
     /**
@@ -33,6 +34,7 @@ public class HalloAndroidActivity extends Activity
 
         end_button = (Button) findViewById(R.id.end_button);
         save_button = (Button) findViewById(R.id.save_button);
+        list_button = (Button) findViewById(R.id.list_button);
 
         eingabe = (EditText) findViewById(R.id.name);
 
@@ -61,6 +63,18 @@ public class HalloAndroidActivity extends Activity
                 {
                     save_button.setVisibility(View.INVISIBLE);
                 }
+            }
+        });
+
+        list_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent i = new Intent(view.getContext(), HelloNameList.class);
+                data.putCharSequence("message", eingabe.getText());
+                i.putExtras(data);
+                startActivity(i);
             }
         });
 

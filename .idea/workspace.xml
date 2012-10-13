@@ -13,14 +13,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2efba6ff-c216-45f9-a5bc-be1c2c09c71e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/cartoon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/mulaschnick/hallo/HelloNameList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/de/mulaschnick/hallo/R.java" afterPath="$PROJECT_DIR$/gen/de/mulaschnick/hallo/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hallo_android.properties" afterPath="$PROJECT_DIR$/hallo_android.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hallo_android.xml" afterPath="$PROJECT_DIR$/hallo_android.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module_hallo_android.xml" afterPath="$PROJECT_DIR$/module_hallo_android.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/state.xml" afterPath="$PROJECT_DIR$/res/layout/state.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/mulaschnick/hallo/HalloAndroidActivity.java" afterPath="$PROJECT_DIR$/src/de/mulaschnick/hallo/HalloAndroidActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/mulaschnick/hallo/InstanceStateDemo.java" afterPath="$PROJECT_DIR$/src/de/mulaschnick/hallo/InstanceStateDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/mulaschnick/hallo/TestFragment.java" afterPath="$PROJECT_DIR$/src/de/mulaschnick/hallo/TestFragment.java" />
     </list>
     <ignored path="Hallo Android.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,12 +84,22 @@
       <file leaf-file-name="HalloAndroidActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/HalloAndroidActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="88" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.0">
+            <state line="85" column="86" selection-start="2678" selection-end="2744" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#2053#2412#0" expanded="true" />
-                <element signature="e#2401#2402#0" expanded="true" />
-                <element signature="e#2454#2594#0" expanded="true" />
-                <element signature="e#2583#2584#0" expanded="true" />
+                <element signature="e#2147#2502#0" expanded="true" />
+                <element signature="e#2491#2492#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloNameList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/HelloNameList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="49" selection-start="439" selection-end="439" vertical-scroll-proportion="0.20862068">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#495#503#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,7 +108,7 @@
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="45" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
+            <state line="1" column="72" selection-start="53" selection-end="111" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,14 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InstanceStateDemo.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="InstanceStateDemo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/InstanceStateDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="50" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.6644182">
-              <folding>
-                <element signature="e#910#1075#0" expanded="true" />
-                <element signature="e#1064#1065#0" expanded="true" />
-              </folding>
+            <state line="24" column="72" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,9 +136,7 @@
         <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/TestFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="29" column="46" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,7 +144,7 @@
       <file leaf-file-name="fragment_layout.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+            <state line="4" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,7 +153,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="45" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+            <state line="14" column="103" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,7 +162,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="35" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+            <state line="19" column="8" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,14 +184,15 @@
       <list>
         <option value="$PROJECT_DIR$/res/layout/list_element.xml" />
         <option value="$PROJECT_DIR$/src/de/mulaschnick/hallo/TestActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_layout.xml" />
         <option value="$PROJECT_DIR$/src/de/mulaschnick/hallo/TestFragment.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/de/mulaschnick/hallo/HalloAndroidActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/state.xml" />
         <option value="$PROJECT_DIR$/src/de/mulaschnick/hallo/InstanceStateDemo.java" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_layout.xml" />
+        <option value="$PROJECT_DIR$/src/de/mulaschnick/hallo/HalloAndroidActivity.java" />
+        <option value="$PROJECT_DIR$/src/de/mulaschnick/hallo/HelloNameList.java" />
       </list>
     </option>
   </component>
@@ -283,30 +292,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hallo Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hallo Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -330,6 +315,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Hallo Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hallo Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hallo Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hallo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,6 +392,30 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hallo Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hallo Android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,16 +432,16 @@
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="hallo_android" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -467,6 +494,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -492,24 +537,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -649,7 +676,15 @@
       <created>1350137215643</created>
       <updated>1350137215643</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Moving between activities enabled">
+      <created>1350138879876</created>
+      <updated>1350138879876</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added some missing files to repository ;-)">
+      <created>1350138969388</created>
+      <updated>1350138969388</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -678,7 +713,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297362" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32575142" sideWeight="0.64868104" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21770918" sideWeight="0.76978415" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24939074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39928058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -691,7 +726,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939074" sideWeight="0.76978415" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3476848" sideWeight="0.76978415" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23021583" sideWeight="0.4939074" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -738,7 +773,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="A fragment and more layout elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some missing files to repository ;-)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -755,6 +790,8 @@
     <MESSAGE value="First working &quot;Hello User&quot; App" />
     <MESSAGE value="Second Activity and passing data through intent" />
     <MESSAGE value="A fragment and more layout elements" />
+    <MESSAGE value="Moving between activities enabled" />
+    <MESSAGE value="Added some missing files to repository ;-)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -764,21 +801,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/android/os/Handler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="3426" selection-end="3426" vertical-scroll-proportion="0.8034682" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-10/android.jar!/java/lang/Thread.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="5236" selection-end="5236" vertical-scroll-proportion="0.8034682" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hallo_android.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -804,66 +826,79 @@
         <state line="5" column="8" selection-start="180" selection-end="970" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/res/layout/state.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" />
+        <state line="12" column="30" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout.xml">
+    <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/TestFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+        <state line="29" column="46" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-11/android.jar!/android/widget/ArrayAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0880829">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="45" selection-start="488" selection-end="488" vertical-scroll-proportion="0.0">
+        <state line="14" column="103" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="45" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
+        <state line="1" column="72" selection-start="53" selection-end="111" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/InstanceStateDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="72" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="41" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="8" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Android/android-sdk/platforms/android-11/android.jar!/android/widget/AdapterView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="28" selection-start="5089" selection-end="5089" vertical-scroll-proportion="0.70689654">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/HalloAndroidActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="88" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.0">
+        <state line="85" column="86" selection-start="2678" selection-end="2744" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#2053#2412#0" expanded="true" />
-            <element signature="e#2401#2402#0" expanded="true" />
-            <element signature="e#2454#2594#0" expanded="true" />
-            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2147#2502#0" expanded="true" />
+            <element signature="e#2491#2492#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/state.xml">
+    <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/HelloNameList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/TestFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0">
+        <state line="18" column="49" selection-start="439" selection-end="439" vertical-scroll-proportion="0.20862068">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/mulaschnick/hallo/InstanceStateDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="50" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.6644182">
-          <folding>
-            <element signature="e#910#1075#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
+            <element signature="e#495#503#0" expanded="true" />
           </folding>
         </state>
       </provider>

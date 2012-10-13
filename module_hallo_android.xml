@@ -2,9 +2,9 @@
 <project name="module_hallo_android" default="compile.module.hallo_android">
   <dirname property="module.hallo_android.basedir" file="${ant.file.module_hallo_android}"/>
   
-  <property name="module.jdk.home.hallo_android" value="${jdk.home.android_2.3.3_platform}"/>
-  <property name="module.jdk.bin.hallo_android" value="${jdk.bin.android_2.3.3_platform}"/>
-  <property name="module.jdk.classpath.hallo_android" value="jdk.classpath.android_2.3.3_platform"/>
+  <property name="module.jdk.home.hallo_android" value="${jdk.home.android_3.0_platform}"/>
+  <property name="module.jdk.bin.hallo_android" value="${jdk.bin.android_3.0_platform}"/>
+  <property name="module.jdk.classpath.hallo_android" value="jdk.classpath.android_3.0_platform"/>
   
   <property name="compiler.args.hallo_android" value="${compiler.args}"/>
   

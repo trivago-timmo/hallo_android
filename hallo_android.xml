@@ -12,7 +12,7 @@
   
   <property name="compiler.debug" value="on"/>
   <property name="compiler.generate.no.warnings" value="off"/>
-  <property name="compiler.args" value=""/>
+  <property name="compiler.args" value="-target 1.6"/>
   <property name="compiler.max.memory" value="128m"/>
   <patternset id="ignored.files">
     <exclude name="**/CVS/**"/>
@@ -63,11 +63,11 @@
   
   <!-- JDK definitions -->
   
-  <property name="jdk.bin.android_2.3.3_platform" value="${jdk.home.android_2.3.3_platform}/../../../Program Files/Java/jdk1.7.0_07/bin"/>
-  <path id="jdk.classpath.android_2.3.3_platform">
-    <fileset dir="${jdk.home.android_2.3.3_platform}">
-      <include name="platforms/android-10/android.jar"/>
-      <include name="platforms/android-10/data/res"/>
+  <property name="jdk.bin.android_3.0_platform" value="${jdk.home.android_3.0_platform}/../../../Program Files/Java/jdk1.7.0_07/bin"/>
+  <path id="jdk.classpath.android_3.0_platform">
+    <fileset dir="${jdk.home.android_3.0_platform}">
+      <include name="platforms/android-11/android.jar"/>
+      <include name="platforms/android-11/data/res"/>
       <include name="tools/support/annotations.jar"/>
     </fileset>
   </path>
