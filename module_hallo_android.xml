@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_hallo_android" default="compile.module.hallo_android">
+  <dirname property="module.hallo_android.basedir" file="${ant.file.module_hallo_android}"/>
+  
+  <property name="module.jdk.home.hallo_android" value="${jdk.home.android_2.3.3_platform}"/>
+  <property name="module.jdk.bin.hallo_android" value="${jdk.bin.android_2.3.3_platform}"/>
+  <property name="module.jdk.classpath.hallo_android" value="jdk.classpath.android_2.3.3_platform"/>
+  
+  <property name="compiler.args.hallo_android" value="${compiler.args}"/>
+  
+  <property name="hallo_android.output.dir" value="${module.hallo_android.basedir}/out/production/Hallo Android"/>
+  <property name="hallo_android.testoutput.dir" value="${module.hallo_android.basedir}/out/test/Hallo Android"/>
+  
+  <path id="hallo_android.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="hallo_android.module.production.classpath">
+    <path refid="${module.jdk.classpath.hallo_android}"/>
+  </path>
+  
+  <path id="hallo_android.runtime.production.module.classpath">
+    <pathelement location="${hallo_android.output.dir}"/>
+  </path>
+  
+  <path id="hallo_android.module.classpath">
+    <path refid="${module.jdk.classpath.hallo_android}"/>
+    <pathelement location="${hallo_android.output.dir}"/>
+  </path>
+  
+  <path id="hallo_android.runtime.module.classpath">
+    <pathelement location="${hallo_android.testoutput.dir}"/>
+    <pathelement location="${hallo_android.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.hallo_android">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.hallo_android">
+    <patternset refid="compiler.excluded"/>
+    <patternset refid="excluded.from.module.hallo_android"/>
+  </patternset>
+  
+  <path id="hallo_android.module.sourcepath">
+    <dirset dir="${module.hallo_android.basedir}">
+      <include name="src"/>
+      <include name="gen"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.hallo_android" depends="compile.module.hallo_android.production,compile.module.hallo_android.tests" description="Compile module Hallo Android"/>
+  
+  <target name="compile.module.hallo_android.production" depends="register.custom.compilers" description="Compile module Hallo Android; production classes">
+    <mkdir dir="${hallo_android.output.dir}"/>
+    <javac2 destdir="${hallo_android.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.hallo_android}/javac">
+      <compilerarg line="${compiler.args.hallo_android}"/>
+      <bootclasspath refid="hallo_android.module.bootclasspath"/>
+      <classpath refid="hallo_android.module.production.classpath"/>
+      <src refid="hallo_android.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.hallo_android"/>
+    </javac2>
+    
+    <copy todir="${hallo_android.output.dir}">
+      <fileset dir="${module.hallo_android.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.hallo_android"/>
+      </fileset>
+      <fileset dir="${module.hallo_android.basedir}/gen">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+        <patternset refid="excluded.from.compilation.hallo_android"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.hallo_android.tests" depends="register.custom.compilers,compile.module.hallo_android.production" description="compile module Hallo Android; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.hallo_android" description="cleanup module">
+    <delete dir="${hallo_android.output.dir}"/>
+    <delete dir="${hallo_android.testoutput.dir}"/>
+  </target>
+</project>
