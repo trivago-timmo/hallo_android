@@ -7,4 +7,6 @@
     <string name="hallo">Hallo %1$s. Ich freue mich, Dich kennenzulernen.</string>
     <string name="speichern">Weiter</string>
     <string name="beenden">Instance Demo</string>
+    <string name="fragment">Test Fragment</string>
+    <string name="fragment1">Test Fragment Demo</string>
 </resources>

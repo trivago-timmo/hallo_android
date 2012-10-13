@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+    <TextView
+            android:id="@+id/message2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:singleLine="false"
+            android:padding="5px"
+            android:background="#fff"
+            android:textColor="#00f"
+            android:text="@string/willkommen"
+            />
+    <ImageView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:padding="30dp"
+            android:src="@drawable/timmo"
+        />
+</LinearLayout>
+

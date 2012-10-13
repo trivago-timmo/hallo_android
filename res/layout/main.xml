@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
@@ -8,38 +8,46 @@
             android:id="@+id/message"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:width="0dip"
             android:textSize="18dip"
-            android:padding="5px"
+            android:padding="5dp"
             android:background="#fff"
             android:textColor="#00f"
-            android:inputType="textCapWords"
             android:text="@string/willkommen"
             />
     <EditText
         android:id="@+id/name"
-        android:layout_below="@id/message"
+        android:background="@drawable/blue_box"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:singleLine="true"
+        android:inputType="textCapWords"
         android:hint="@string/vorname_nachname"
         />
-    <Button
-            android:id="@+id/save_button"
-            android:layout_below="@id/name"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
+    <LinearLayout
             android:layout_height="wrap_content"
-            android:text="@string/speichern"
-            android:visibility="visible"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+        <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/speichern"
+                android:visibility="visible"
+                />
+        <Button
+                android:id="@+id/end_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beenden"
+                />
+    </LinearLayout>
+    <fragment android:id="@+id/fragment"
+              android:name="de.mulaschnick.hallo.TestFragment"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
             />
-    <Button
-            android:id="@+id/end_button"
-            android:layout_below="@id/name"
-            android:layout_alignParentLeft="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/beenden"
-            />
-</RelativeLayout>
+</LinearLayout>
 

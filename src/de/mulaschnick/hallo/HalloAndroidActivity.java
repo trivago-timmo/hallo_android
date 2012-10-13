@@ -18,6 +18,7 @@ public class HalloAndroidActivity extends Activity
     private Button end_button;
     private Button save_button;
     private EditText eingabe;
+    private Bundle data = new Bundle();
     /**
      * Called when the activity is first created.
      */
@@ -80,7 +81,8 @@ public class HalloAndroidActivity extends Activity
            public void onClick(View view)
            {
                 Intent i = new Intent(view.getContext(), InstanceStateDemo.class);
-                i.putExtra("test", "Eingabe");
+                data.putCharSequence("test", eingabe.getText());
+                i.putExtras(data);
                 startActivity(i);
 //                finish();
            }
