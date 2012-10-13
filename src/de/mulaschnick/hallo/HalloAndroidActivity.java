@@ -64,15 +64,15 @@ public class HalloAndroidActivity extends Activity
             }
         });
 
-        save_button.setOnClickListener(new View.OnClickListener()
+        save_button.setOnClickListener (new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                if (eingabe.length() > 0)
-                {
-                    message.setText(getString(R.string.hallo, eingabe.getText()));
-                }
+                Intent i = new Intent(view.getContext(), InstanceStateDemo.class);
+                data.putCharSequence("message", eingabe.getText());
+                i.putExtras(data);
+                startActivity(i);
             }
         });
 
@@ -80,11 +80,7 @@ public class HalloAndroidActivity extends Activity
         {
            public void onClick(View view)
            {
-                Intent i = new Intent(view.getContext(), InstanceStateDemo.class);
-                data.putCharSequence("test", eingabe.getText());
-                i.putExtras(data);
-                startActivity(i);
-//                finish();
+                finish();
            }
         });
     }

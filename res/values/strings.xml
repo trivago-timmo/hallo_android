@@ -6,7 +6,7 @@
     <string name="willkommen">Hallo. Schön das Du da bist. Bitte verrate mir Deinen Namen.</string>
     <string name="hallo">Hallo %1$s. Ich freue mich, Dich kennenzulernen.</string>
     <string name="speichern">Weiter</string>
-    <string name="beenden">Instance Demo</string>
-    <string name="fragment">Test Fragment</string>
-    <string name="fragment1">Test Fragment Demo</string>
+    <string name="new_activity">Neue Activity</string>
+    <string name="fragment">Ich bin ein Fragment</string>
+    <string name="zurueck">Zurück</string>
 </resources>

@@ -27,6 +27,6 @@ public class TestFragment extends Fragment
     {
         super.onStart();    //To change body of overridden methods use File | Settings | File Templates.
         TextView tv = (TextView) getView();
-        tv.setText(getString(R.string.fragment1));
+        tv.setText(getString(R.string.fragment));
     }
 }

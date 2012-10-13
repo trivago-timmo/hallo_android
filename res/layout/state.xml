@@ -10,16 +10,26 @@
             android:layout_height="wrap_content"
             android:textSize="18dip"
             android:singleLine="false"
-            android:padding="5px"
+            android:padding="5dp"
             android:background="#fff"
             android:textColor="#00f"
-            android:text="@string/willkommen"
             />
     <ImageView
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:padding="30dp"
             android:src="@drawable/timmo"
         />
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+        <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zurueck"/>
+    </LinearLayout>
 </LinearLayout>
 
