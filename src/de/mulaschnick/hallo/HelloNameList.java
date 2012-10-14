@@ -2,6 +2,8 @@ package de.mulaschnick.hallo;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -19,24 +21,39 @@ import java.util.*;
 public class HelloNameList extends ListActivity
 {
     private ArrayList<String> objects = new ArrayList<String>();
+    private DatabaseHelper dbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        Intent i = getIntent();
-        Bundle extras = i.getExtras();
-
-        if (savedInstanceState != null)
-        {
-            objects = savedInstanceState.getStringArrayList("objects");
-        }
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+        dbHelper = new DatabaseHelper(this);
 
         if (!extras.isEmpty())
         {
-            objects.add(extras.getCharSequence("message").toString());
+            dbHelper.insert(extras.getCharSequence("message").toString());
+//            objects.add(extras.getCharSequence("message").toString());
         }
 
+        Cursor dbResult = dbHelper.getAll();
+        startManagingCursor(dbResult);
+        if (dbResult.moveToFirst())
+        {
+            for (Integer i=0; i < dbResult.getCount(); i++)
+            {
+                objects.add(dbResult.getString(1));
+                dbResult.moveToNext();
+            }
+        }
+
+//        if (savedInstanceState != null)
+//        {
+//            objects = savedInstanceState.getStringArrayList("objects");
+//        }
+
         super.onCreate(savedInstanceState);
+
         ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.fragment_layout, objects);
         setListAdapter(adapter);
     }
