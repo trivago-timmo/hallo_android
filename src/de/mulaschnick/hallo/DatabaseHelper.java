@@ -24,8 +24,8 @@ public class DatabaseHelper extends SQLiteOpenHelper
     private static final Integer DB_VERSION = 1;
 
     private static final String TABLE_NAME = "HelloName";
-    private static final String COLUMN_ID = "_id";
-    private static final String COLUMN_NAME = "name";
+    public static final String COLUMN_ID = "_id";
+    public static final String COLUMN_NAME = "name";
 
     private static final String TABLE_CREATE = "CREATE TABLE IF NOT EXISTS "
                                             + TABLE_NAME

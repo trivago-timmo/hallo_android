@@ -3,11 +3,15 @@ package de.mulaschnick.hallo;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
+import android.database.CursorWrapper;
+import android.database.sqlite.SQLiteCursor;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
 
 import java.util.*;
 
@@ -20,7 +24,7 @@ import java.util.*;
  */
 public class HelloNameList extends ListActivity
 {
-    private ArrayList<String> objects = new ArrayList<String>();
+    private static final String TAG = HelloNameList.class.getSimpleName();
     private DatabaseHelper dbHelper;
 
     @Override
@@ -38,14 +42,14 @@ public class HelloNameList extends ListActivity
 
         Cursor dbResult = dbHelper.getAll();
         startManagingCursor(dbResult);
-        if (dbResult.moveToFirst())
-        {
-            for (Integer i=0; i < dbResult.getCount(); i++)
-            {
-                objects.add(dbResult.getString(1));
-                dbResult.moveToNext();
-            }
-        }
+//        if (dbResult.moveToFirst())
+//        {
+//            for (Integer i=0; i < dbResult.getCount(); i++)
+//            {
+//                objects.add(dbResult.getString(1));
+//                dbResult.moveToNext();
+//            }
+//        }
 
 //        if (savedInstanceState != null)
 //        {
@@ -54,7 +58,13 @@ public class HelloNameList extends ListActivity
 
         super.onCreate(savedInstanceState);
 
-        ArrayAdapter adapter = new ArrayAdapter<String>(this, R.layout.fragment_layout, objects);
+        ListAdapter adapter = new SimpleCursorAdapter(
+                this,
+                R.layout.list_element,
+                dbResult,
+                new String[] {DatabaseHelper.COLUMN_NAME},
+                new int[] {R.id.list_name}
+        );
         setListAdapter(adapter);
     }
 
@@ -62,8 +72,15 @@ public class HelloNameList extends ListActivity
     protected void onListItemClick(ListView l, View v, int position, long id)
     {
         super.onListItemClick(l, v, position, id);    //To change body of overridden methods use File | Settings | File Templates.
+
+        Object o = getListAdapter().getItem(position);
+        SQLiteCursor cursor = (SQLiteCursor) o;
+        Integer columnIndex = cursor.getColumnIndex(DatabaseHelper.COLUMN_NAME);
+
+        Log.d(TAG, columnIndex.toString());
+
         Intent i = new Intent(v.getContext(), InstanceStateDemo.class);
-        i.putExtra("message", (CharSequence) objects.get(position));
+        i.putExtra("message", (CharSequence) getText(columnIndex));
         startActivity(i);
     }
 
@@ -71,6 +88,6 @@ public class HelloNameList extends ListActivity
     protected void onSaveInstanceState(Bundle outState)
     {
         super.onSaveInstanceState(outState);    //To change body of overridden methods use File | Settings | File Templates.
-        outState.putStringArrayList("objects", objects);
+//        outState.putStringArrayList("objects", objects);
     }
 }
