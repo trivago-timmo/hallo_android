@@ -30,15 +30,9 @@ public class HelloNameList extends ListActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
         dbHelper = new DatabaseHelper(this);
 
-        if (!extras.isEmpty())
-        {
-            dbHelper.insert(extras.getCharSequence("message").toString());
-//            objects.add(extras.getCharSequence("message").toString());
-        }
+//      objects.add(extras.getCharSequence("message").toString());
 
         Cursor dbResult = dbHelper.getAll();
         startManagingCursor(dbResult);
@@ -77,10 +71,8 @@ public class HelloNameList extends ListActivity
         SQLiteCursor cursor = (SQLiteCursor) o;
         Integer columnIndex = cursor.getColumnIndex(DatabaseHelper.COLUMN_NAME);
 
-        Log.d(TAG, columnIndex.toString());
-
         Intent i = new Intent(v.getContext(), InstanceStateDemo.class);
-        i.putExtra("message", (CharSequence) getText(columnIndex));
+        i.putExtra("message", (CharSequence) cursor.getString(columnIndex));
         startActivity(i);
     }
 

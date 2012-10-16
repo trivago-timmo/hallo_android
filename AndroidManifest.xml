@@ -18,5 +18,8 @@
         <activity android:name=".HelloNameList"
                   android:label="@string/list_name">
         </activity>
+        <activity android:name=".JsonRequestActivity"
+                  android:label="@string/json_name">
+        </activity>
     </application>
 </manifest> 

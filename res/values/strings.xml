@@ -11,4 +11,8 @@
     <string name="new_activity">Neue Activity</string>
     <string name="fragment">Ich bin ein Fragment</string>
     <string name="zurueck">Zurück</string>
+    <string name="json_name">Json Request</string>
+    <string name="json_url">Web-URL</string>
+    <string name="json_send">Abfragen</string>
+    <string name="json_activity">JSON</string>
 </resources>
