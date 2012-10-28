@@ -53,6 +53,8 @@ public final class R {
         public static final int new_activity=0x7f040008;
         public static final int show_list=0x7f040007;
         public static final int speichern=0x7f040006;
+        public static final int tabForm=0x7f040010;
+        public static final int tabList=0x7f04000f;
         public static final int vorname_nachname=0x7f040003;
         public static final int willkommen=0x7f040004;
         public static final int zurueck=0x7f04000a;

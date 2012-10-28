@@ -2,15 +2,17 @@ package de.mulaschnick.hallo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.DefaultHttpClient;
+
+import java.io.IOException;
 
 /**
  * Created with IntelliJ IDEA.
@@ -32,6 +34,7 @@ public class JsonRequestActivity extends Activity
         setContentView(R.layout.test_json);
 
         json_text = (EditText) findViewById(R.id.json_url);
+        json_request = (Button) findViewById(R.id.json_button);
 
         json_request.setOnClickListener(new View.OnClickListener()
         {
@@ -40,8 +43,18 @@ public class JsonRequestActivity extends Activity
             {
                 String uri = json_text.getText().toString();
 
-                HttpClient httpClient = new DefaultHttpClient();
-                HttpUriRequest httpGet = new HttpGet(uri);
+                try
+                {
+                    HttpClient client = new DefaultHttpClient();
+                    HttpGet request = new HttpGet(uri);
+                    HttpResponse response = client.execute(request);
+
+                    HttpEntity entity = response.getEntity();
+                    Log.d(TAG, entity.toString());
+                } catch (Exception e)
+                {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                }
             }
         });
     }
