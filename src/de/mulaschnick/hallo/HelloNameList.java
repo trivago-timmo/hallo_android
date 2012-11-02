@@ -1,5 +1,8 @@
 package de.mulaschnick.hallo;
 
+import android.app.Dialog;
+import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,6 +12,7 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
@@ -60,6 +64,22 @@ public class HelloNameList extends ListActivity
                 new int[] {R.id.list_name}
         );
         setListAdapter(adapter);
+
+        ListView listView = getListView();
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+                onLongListItemClick(view, i, l);
+                return false;  //To change body of implemented methods use File | Settings | File Templates.
+            }
+        });
+    }
+
+    protected void onLongListItemClick(View view, int pos, long id)
+    {
+        final FragmentManager fragmentManager = getFragmentManager();
+        DialogFragment dialogFragment = new ListDialog();
+        dialogFragment.show(fragmentManager, "jaja, tolles fragment");
     }
 
     @Override
@@ -75,6 +95,8 @@ public class HelloNameList extends ListActivity
         i.putExtra("message", (CharSequence) cursor.getString(columnIndex));
         startActivity(i);
     }
+
+
 
     @Override
     protected void onSaveInstanceState(Bundle outState)

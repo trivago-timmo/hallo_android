@@ -17,4 +17,5 @@
     <string name="json_activity">JSON</string>
     <string name="tabList">Liste</string>
     <string name="tabForm">Eingabe</string>
+    <string name="listDialog">Aktion ausführen</string>
 </resources>
